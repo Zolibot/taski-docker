@@ -1,0 +1,9 @@
+venv/
+.git
+db.sqlite3
+.env
+migrations/
+*/temp*
+*/*/temp*
+temp?
+.env
