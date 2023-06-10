@@ -185,6 +185,7 @@ jobs:
           script: |
             cd taski
             # Выполняет pull образов с Docker Hub
+            sudo docker system prune -af
             sudo docker compose -f docker-compose.production.yml pull
             # Перезапускает все контейнеры в Docker Compose
             sudo docker compose -f docker-compose.production.yml down
